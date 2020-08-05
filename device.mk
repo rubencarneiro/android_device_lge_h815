@@ -42,7 +42,7 @@ $(call inherit-product, device/lge/g4-common/g4.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
-    $(LOCAL_PATH)/ubuntu/init_setup_first_boot.sh:system/halium/var/lib/lxc/android/pre-start.d/init_setup_first_boot.sh \
+#    $(LOCAL_PATH)/ubuntu/init_setup_first_boot.sh:system/halium/var/lib/lxc/android/pre-start.d/init_setup_first_boot.sh \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.vanilla.abi=1
