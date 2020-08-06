@@ -23,7 +23,7 @@ $(call inherit-product-if-exists, vendor/lge/h815/h815-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Init configuration
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 #    fstab.h815 \
 #    init.device.rc \
 
@@ -44,7 +44,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/ubuntu/rsyslog.conf:etc/rsyslog.conf \
     $(LOCAL_PATH)/ubuntu/touch.pa:etc/pulse/touch.pa \
-
+    $(LOCAL_PATH)/ubuntu/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml 
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.vanilla.abi=1
