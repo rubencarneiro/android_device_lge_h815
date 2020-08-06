@@ -42,8 +42,8 @@ $(call inherit-product, device/lge/g4-common/g4.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
-    $(LOCAL_PATH)/ubuntu/rsyslog.conf:etc/rsyslog.conf \
-    $(LOCAL_PATH)/ubuntu/touch.pa:etc/pulse/touch.pa \
+    $(LOCAL_PATH)/ubuntu/rsyslog.conf:system/etc/rsyslog.conf \
+    $(LOCAL_PATH)/ubuntu/touch.pa:system/etc/pulse/touch.pa \
     $(LOCAL_PATH)/ubuntu/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml 
 
 PRODUCT_PROPERTY_OVERRIDES += \
