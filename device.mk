@@ -30,6 +30,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
+    $(LOCAL_PATH)/ubuntu/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
 	
 # Gps
 PRODUCT_COPY_FILES += \
@@ -44,9 +45,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/ubuntu/rsyslog.conf:system/halium/etc/rsyslog.conf \
     $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:system/halium/etc/audio_platform_info.xml \
-    $(LOCAL_PATH)/ubuntu/audio_policy_configuration.xml:system/halium/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/configs/gps.conf:system/halium/etc/gps.conf
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.vanilla.abi=1
