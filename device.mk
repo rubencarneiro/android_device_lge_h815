@@ -29,10 +29,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # UBPorts
  PRODUCT_PACKAGES += \
-     libubuntu_application_api \
-     direct_ubuntu_application_sensors_c_api_for_hybris_test \
-     direct_ubuntu_application_sensors_for_hybris_test \
-     direct_ubuntu_application_gps_c_api_for_hybris_test \
+#     libubuntu_application_api \
+#     direct_ubuntu_application_sensors_c_api_for_hybris_test \
+#     direct_ubuntu_application_sensors_for_hybris_test \
+#     direct_ubuntu_application_gps_c_api_for_hybris_test \
      libcamera_compat_layer \
      libmedia_compat_layer_32 \
      libaudioflingerglue \
@@ -57,6 +57,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/ubuntu/rsyslog.conf:system/halium/etc/rsyslog.conf \
+    $(LOCAL_PATH)/ubuntu/timekeeper.conf:system/halium/etc/init/timekeeper.conf \
     $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa \
 
 PRODUCT_PROPERTY_OVERRIDES += \
