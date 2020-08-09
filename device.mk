@@ -27,6 +27,20 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 #    fstab.h815 \
 #    init.device.rc \
 
+# UBPorts
+ PRODUCT_PACKAGES += \
+     libubuntu_application_api \
+     direct_ubuntu_application_sensors_c_api_for_hybris_test \
+     direct_ubuntu_application_sensors_for_hybris_test \
+     direct_ubuntu_application_gps_c_api_for_hybris_test \
+     libcamera_compat_layer \
+     libmedia_compat_layer_32 \
+     libaudioflingerglue \
+     libdroidmedia \
+     libminisf \
+     minimediaservice \
+     miniafservice
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml
