@@ -59,6 +59,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/rsyslog.conf:system/halium/etc/rsyslog.conf \
     $(LOCAL_PATH)/ubuntu/timekeeper.conf:system/halium/etc/init/timekeeper.conf \
     $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa \
+    
+
+MINIMEDIA_SENSORSERVER_DISABLE := 1
+
+# telepathy-ofono quirks - for later build
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.t-o.quirk.forcesink=sink.primary_output  \
+#    ro.t-o.quirk.forcesource=source.primary_source
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.vanilla.abi=1
