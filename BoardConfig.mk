@@ -26,5 +26,8 @@ TARGET_OTA_ASSERT_DEVICE := g4,p1,h815
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_h815_defconfig
 
+# Media
+HYBRIS_MEDIA_32_BIT_ONLY := false
+
 # inherit from the proprietary version
 -include vendor/lge/h815/BoardConfigVendor.mk
