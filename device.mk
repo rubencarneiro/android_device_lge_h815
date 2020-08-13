@@ -29,12 +29,15 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # UBPorts
  PRODUCT_PACKAGES += \
-#     libubuntu_application_api \
+     libubuntu_application_api \
 #     direct_ubuntu_application_sensors_c_api_for_hybris_test \
 #     direct_ubuntu_application_sensors_for_hybris_test \
 #     direct_ubuntu_application_gps_c_api_for_hybris_test \
+     libcameraservice \
+     libdroidmedia \
      libcamera_compat_layer \
-     libmedia_compat_layer_32 \
+#     libmedia_compat_layer_32 \
+     libmedia_compat_layer \
      libaudioflingerglue \
      libdroidmedia \
      libminisf \
@@ -67,6 +70,7 @@ MINIMEDIA_SENSORSERVER_DISABLE := 1
 #PRODUCT_PROPERTY_OVERRIDES += \
 #    ro.t-o.quirk.forcesink=sink.primary_output  \
 #    ro.t-o.quirk.forcesource=source.primary_source
+#    ril.device=ril
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.vanilla.abi=1
