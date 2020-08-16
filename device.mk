@@ -36,7 +36,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
      libcameraservice \
      libdroidmedia \
      libcamera_compat_layer \
-#     libmedia_compat_layer_32 \
+     libmedia_compat_layer_32 \
      libmedia_compat_layer \
      libaudioflingerglue \
      libdroidmedia \
@@ -50,7 +50,7 @@ PRODUCT_COPY_FILES += \
 	
 # Gps
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
+    $(LOCAL_PATH)/configs/gps.conf:system/halium/etc/gps.conf
 
 # common g4
 $(call inherit-product, device/lge/g4-common/g4.mk)
@@ -67,11 +67,11 @@ PRODUCT_COPY_FILES += \
 
 MINIMEDIA_SENSORSERVER_DISABLE := 1
 
-# telepathy-ofono quirks - for later build
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    ro.t-o.quirk.forcesink=sink.primary_output  \
-#    ro.t-o.quirk.forcesource=source.primary_source
-#    ril.device=ril
+# telepathy-ofono quirks
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.t-o.quirk.forcesink=sink.primary_output  \
+    ro.t-o.quirk.forcesource=source.primary_source \
+    ril.device=ril
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.vanilla.abi=1
