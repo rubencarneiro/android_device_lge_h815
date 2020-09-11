@@ -37,9 +37,9 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
      libmedia_compat_layer \
      libaudioflingerglue \
      libdroidmedia \
-     libminisf \
      minimediaservice \
-     miniafservice
+     miniafservice \
+#     libminisf
 
 # Audio
 PRODUCT_COPY_FILES += \
